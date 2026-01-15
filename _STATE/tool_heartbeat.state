@@ -1,0 +1,25 @@
+awk|present|GNU Awk 5.1.0, API: 3.0 (GNU MPFR 4.1.0, GNU MP 6.2.1)
+bash|present|GNU bash, версия 5.1.16(1)-release (x86_64-pc-linux-gnu)
+blender|present|Blender 4.2.3 LTS
+code|present|1.107.1
+coreutils|absent|—
+curl|present|curl 7.81.0 (x86_64-pc-linux-gnu) libcurl/7.81.0 OpenSSL/3.0.2 zlib/1.2.11 brotli/1.0.9 zstd/1.4.8 libidn2/2.3.2 libpsl/0.21.0 (+libidn2/2.3.2) libssh/0.9.6/openssl/zlib nghttp2/1.43.0 librtmp/2.3 OpenLDAP/2.5.19
+docker|present|Docker version 28.2.2, build 28.2.2-0ubuntu1~22.04.1
+docker-compose|absent|—
+ffmpeg|present|version: unknown
+find|present|find (GNU findutils) 4.8.0
+gh|present|gh version 2.4.0+dfsg1 (2022-03-23 Ubuntu 2.4.0+dfsg1-2)
+git|present|git version 2.34.1
+godot|present|4.3.stable.official.77dcf97d8
+grep|present|grep (GNU grep) 3.7
+node|present|v20.19.6
+npm|present|10.8.2
+ollama|present|ollama version is 0.13.5
+pip3|present|pip 25.3 from /home/arc/.local/lib/python3.10/site-packages/pip (python 3.10)
+podman|absent|—
+python3|present|Python 3.10.12
+rclone|present|rclone v1.53.3-DEV
+sed|present|sed (GNU sed) 4.8
+# tool|status|version
+wget|present|GNU Wget 1.21.2 для linux-gnu.
+xdg-open|present|xdg-open 1.1.3
