@@ -7,3 +7,7 @@ __pycache__/
 *.swo
 .DS_Store
 Thumbs.db
+_TRACES/PULSE_GITHUB_*.md
+_TRACES/.github_autopilot.lock
+_TRACES/POE/.poe_core.lock
+_STATE/*.lock
