@@ -11,3 +11,7 @@ _TRACES/PULSE_GITHUB_*.md
 _TRACES/.github_autopilot.lock
 _TRACES/POE/.poe_core.lock
 _STATE/*.lock
+_RAW/
+_STATE/*.tmp
+_STATE/current_session
+_TRACES/RAW_SYNC/*.tmp
