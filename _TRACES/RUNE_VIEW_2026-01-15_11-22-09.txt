@@ -1,0 +1,17 @@
+GENESIS :: RUNE VIEW SNAPSHOT
+TIME: 2026-01-15 11:22:09 EET
+ROOT: /home/arc/GENESIS
+
+RUNE
+├── ALMAZIKI -> BOOK/ALMAZIKI
+├── BOOK -> ../VAULT
+├── FORGE -> ../FORGE
+├── INBOX -> BOOK/_INBOX
+├── MIRROR -> ../MIRROR
+├── OPEN -> BOOK/_OPEN
+├── PASSPORT.md -> BOOK/PASSPORT.md
+├── START.md -> ../START.md
+├── TOOLS -> ../bin
+└── _TRACES -> BOOK/_TRACES
+
+8 directories, 2 files
