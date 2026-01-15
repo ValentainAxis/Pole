@@ -1,0 +1,123 @@
+GENESIS :: RUNE SNAPSHOT
+TIME: 2026-01-15 11:13:43 EET
+
+ROOT: /home/arc/GENESIS
+
+.
+├── archive
+├── ASSETS
+├── bin
+│   ├── ai_now.sh
+│   ├── chronist.sh
+│   ├── chronist.sh.bak_fix_2026-01-15_00-54-33
+│   ├── desktop_icons_off.sh
+│   ├── desktop_icons_on.sh
+│   ├── docker_off.sh
+│   ├── docker_on.sh
+│   ├── docker_status.sh
+│   ├── genesis
+│   ├── genesis_autosave_vault.sh
+│   ├── genesis_book
+│   ├── genesis_entry_build.sh
+│   ├── genesis_hello
+│   ├── genesis_link_github.sh
+│   ├── genesis_metric.sh
+│   ├── genesis_mode_auto.sh
+│   ├── genesis_mode_quiet.sh
+│   ├── genesis-mode-status.sh
+│   ├── genesis_mode_status.sh
+│   ├── genesis_open_entry.sh
+│   ├── genesis_sync_assets_rclone.sh
+│   ├── mirror.sh
+│   ├── mirror.sh.bak_2026-01-14_23-26-34
+│   ├── mirror.sh.bak_2026-01-14_23-47-36
+│   ├── mirror.sh.bak_2026-01-14_23-50-01
+│   ├── mirror.sh.bak_2026-01-14_23-51-59
+│   ├── mirror.sh.bak_2026-01-15_00-34-06
+│   ├── mirror.sh.bak_fix_2026-01-15_00-54-33
+│   ├── mirror.sh.bak_lang_2026-01-15_00-56-13
+│   ├── ollama_autostart_off.sh
+│   ├── ollama_autostart_on.sh
+│   ├── ollama_off.sh
+│   ├── ollama_on.sh
+│   ├── ollama_status.sh
+│   ├── passport.sh
+│   ├── passport.sh.bak_osfix_2026-01-15_01-32-41
+│   ├── passport.sh.bak_osfix2_2026-01-15_01-34-29
+│   ├── passport.sh.save
+│   ├── seed_flow.sh
+│   ├── seed_SEED_GODOT_20260114_2215_folder.sh
+│   ├── seed_SEED_GODOT_20260114_2215_godot.sh
+│   ├── seed_SEED_GODOT_20260114_2215_run.sh
+│   ├── seed_SEED_GODOT_20260114_2215_traces.sh
+│   ├── waydroid_off.sh
+│   ├── waydroid_on.sh
+│   └── waydroid_status.sh
+├── Book
+│   └── Portfolio_Architect-Founder
+├── BOOK
+│   ├── book.py
+│   ├── db
+│   ├── __pycache__
+│   └── VAULT -> VAULT
+├── core
+│   └── policy.txt
+├── data
+│   └── COSMOS
+├── _DESKTOP_ARCHIVE_2026-01-15_00-47-08
+├── Diagnostics
+│   ├── diag_2026-01-13_23-02-41
+│   └── diag_focus_2026-01-13_23-22-13
+├── exec
+├── flags
+│   ├── flag_save_all.sh
+│   └── import_to_last_capture.sh
+├── FORGE
+│   ├── ARTIFACTS
+│   └── RUNS
+├── health
+│   └── status.sh
+├── hooks
+│   ├── archive.sh
+│   ├── log.sh
+│   └── run.sh
+├── kuzya
+│   ├── kuzya_popup.sh
+│   ├── kuzya_scroll.sh
+│   ├── last_popup_date.txt
+│   ├── manifest_scroll.txt
+│   └── manifest.txt
+├── logs
+│   └── actions.log
+├── MIRROR
+│   ├── CHECKS
+│   ├── GUARDRAILS.md
+│   └── SCENES
+├── PHASE_II
+│   ├── CANON_PHASE_II.txt
+│   ├── PHASE_II_STATUS.txt
+│   └── PROJECT_PASSPORT.txt
+├── PROJECTS
+│   └── SEED_GODOT_20260114_2215
+├── START.md
+├── TASKS
+│   └── TASK_CONTEXT.md
+├── TECH_DIAGNOSTIC
+│   ├── step1_initial_2026-01-14_00-31-30
+│   ├── step2_cleanup_candidates_2026-01-14_00-35-19
+│   ├── step2_cleanup_candidates_SAFE_2026-01-14_01-04-14
+│   ├── step2_cleanup_candidates_SAFE_2026-01-14_01-30-57
+│   └── step3_after_cleanup_2026-01-14_16-06-17
+├── TOOLS -> bin
+└── VAULT
+    ├── ALMAZIKI
+    ├── _CANON
+    ├── _CORE
+    ├── _INBOX
+    ├── _OPEN
+    ├── PASSPORT.md
+    ├── START.md
+    ├── _TECH
+    └── _TRACES
+
+46 directories, 69 files
