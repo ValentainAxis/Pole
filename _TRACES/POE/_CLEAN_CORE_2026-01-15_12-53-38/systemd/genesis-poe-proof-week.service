@@ -1,0 +1,6 @@
+[Unit]
+Description=GENESIS POE Weekly Proof (export visible artifact)
+
+[Service]
+Type=oneshot
+ExecStart=/home/arc/GENESIS/bin/genesis_poe_proof_week.sh

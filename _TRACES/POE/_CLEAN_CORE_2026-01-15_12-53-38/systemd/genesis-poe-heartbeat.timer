@@ -1,0 +1,10 @@
+[Unit]
+Description=Run GENESIS POE Heartbeat daily (minimal trace)
+
+[Timer]
+OnBootSec=2m
+OnCalendar=*-*-* 12:20:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

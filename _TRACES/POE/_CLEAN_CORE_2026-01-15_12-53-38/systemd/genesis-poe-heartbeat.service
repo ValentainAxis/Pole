@@ -1,0 +1,6 @@
+[Unit]
+Description=GENESIS POE Heartbeat (minimal trace)
+
+[Service]
+Type=oneshot
+ExecStart=/home/arc/GENESIS/bin/genesis_poe_heartbeat.sh
