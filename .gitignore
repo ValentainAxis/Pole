@@ -1,0 +1,9 @@
+# GENESIS :: Vault ignores
+_TRASH/
+.cache/
+__pycache__/
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
