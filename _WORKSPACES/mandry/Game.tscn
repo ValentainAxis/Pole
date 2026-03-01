@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcalumxp1nev8"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_player"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_player"]
+size = Vector2(32, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hut"]
+size = Vector2(120, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_juli5"]
+size = Vector2(140, 100)
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(160, 180)
+script = ExtResource("1_player")
+
+[node name="PlayerCollision" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_player")
+
+[node name="PlayerVisual" type="Polygon2D" parent="Player"]
+modulate = Color(1, 1, 1, 0.72549)
+polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
+
+[node name="Hut" type="StaticBody2D" parent="."]
+position = Vector2(420, 220)
+
+[node name="HutCollision" type="CollisionShape2D" parent="Hut"]
+self_modulate = Color(1, 1, 1, 0.490196)
+shape = SubResource("RectangleShape2D_hut")
+debug_color = Color(0.464947, 0.455859, 0.458133, 0.42)
+
+[node name="HutVisual" type="Polygon2D" parent="Hut"]
+polygon = PackedVector2Array(-60, -40, 60, -40, 60, 40, -60, 40)
+
+[node name="HutArea" type="Area2D" parent="Hut"]
+
+[node name="HutAreaCollision" type="CollisionShape2D" parent="Hut/HutArea"]
+shape = SubResource("RectangleShape2D_juli5")
+
+[node name="Hint" type="Label" parent="."]
+offset_left = 18.0
+offset_top = 18.0
+offset_right = 18.0
+offset_bottom = 18.0
+text = "Game: двигайся стрелками/WASD. Подойди к прямоугольнику."
+
+[node name="Sfx" type="AudioStreamPlayer" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="UIRoot" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fog" type="ColorRect" parent="UI/UIRoot"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.235294)
+
+[node name="MusicLow" type="AudioStreamPlayer" parent="."]
+
+[node name="MusicMid" type="AudioStreamPlayer" parent="."]
+
+[node name="MusicHigh" type="AudioStreamPlayer" parent="."]

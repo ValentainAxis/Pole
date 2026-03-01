@@ -1,0 +1,6 @@
+[Unit]
+Description=GENESIS Trader Card (POE) - weekly offer card
+
+[Service]
+Type=oneshot
+ExecStart=/home/arc/GENESIS/bin/genesis_trader_card_poe.sh

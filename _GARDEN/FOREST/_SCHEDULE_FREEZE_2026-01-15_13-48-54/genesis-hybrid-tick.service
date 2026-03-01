@@ -1,0 +1,6 @@
+[Unit]
+Description=GENESIS Hybrid Tick (weekly hybrid seed)
+
+[Service]
+Type=oneshot
+ExecStart=/home/arc/GENESIS/bin/genesis_hybrid_tick.sh

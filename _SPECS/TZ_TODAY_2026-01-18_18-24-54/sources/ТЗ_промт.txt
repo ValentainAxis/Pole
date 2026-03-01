@@ -1,0 +1,258 @@
+IMPLEMENTATION PROMPT — GENESIS SYSTEM (ENGINEERING EDITION)
+
+Version: 2.0-rc1
+Audience: Engineer / Coding AI
+Objective: Build system exactly as specified. No reinterpretation.
+
+0. SYSTEM OVERVIEW (WHAT YOU ARE BUILDING)
+
+Ты реализуешь трёхуровневую архитектуру:
+
+User → Assistant → Resonance Protocol → Agent Runa → TRACES → Observation Shell
+
+Где:
+
+Assistant = планирование, контроль, формирование Step-ов.
+
+Agent Runa = исполнитель шагов в изолированной среде GENESIS.
+
+Resonance Protocol = единственный канал связи между ними.
+
+TRACES = проверяемое хранилище фактов выполнения.
+
+Observation Shell = read-only интерфейс наблюдения.
+
+1. CORE INVARIANTS (MUST-HAVE, NON-NEGOTIABLE)
+
+Single Channel:
+Единственный канал Ассистент ↔ Runa — Resonance Protocol.
+Никаких вторичных потоков, логов, туннелей, stdout/stderr.
+Всё, что выходит наружу — строго через Status/Result.
+
+Deterministic Execution Chain:
+Step → Ack → Status(running) → Status(terminal) → Trace → Result
+
+Read-Only Observation:
+Observation Shell не влияет на выполнение, не отправляет команд.
+
+Strict Isolation:
+Agent Runa работает только в рамках Workspace.
+Позволено: запуск allowlisted бинарников + GENESIS/bin.
+
+Trace-based Verifiability:
+Факт выполнения определяется только Status(source) + Trace(file).
+
+2. GENESIS LAYER (TARGET ENVIRONMENT)
+
+GENESIS = файловая и вычислительная инфраструктура.
+
+Workspace
+~/GENESIS/workspaces/<session_id>/
+
+
+Создаётся Runa перед первым Step.
+Используется для выполнения всех шагов.
+Очистка — deferred.
+
+TRACES
+~/GENESIS/VAULT/_TRACES/<trace_id>.json
+
+
+Формат (минимальный гарантированный):
+
+{
+  "id": "<id>",
+  "timestamp": "<iso8601>",
+  "context": { "session_id": "...", "step_id": "..." },
+  "status": "success"|"error"|"aborted",
+  "details": {...},
+  "output": {...},
+  "links": { "previous": "<id|null>" }
+}
+
+Allowlist
+~/GENESIS/config/allowlist.yml
+
+
+Включает список исполняемых файлов.
+Параметры валидируются обёртками в GENESIS/bin.
+
+3. AGENT RUNA (EXECUTION ENGINE)
+Input: Step (via Protocol)
+{
+  "id": "<uuid>",
+  "type": "action"|"compensation",
+  "command": "<string>",
+  "metadata": {...},
+  "session_id": "<string>",
+  "timestamp_issued_ms": <unix_ms>
+}
+
+Output: Status (via Protocol)
+{
+  "type": "status",
+  "session_id": "<string>",
+  "step_id": "<uuid>",
+  "state": "pending"|"running"|"success"|"error"|"aborted",
+  "error_type": null|"execution_error"|"security_violation"|
+                 "environment_error"|"protocol_error"|"user_abort",
+  "timestamp_ms": <unix_ms>,
+  "diagnostic": {...}
+}
+
+Execution Rules
+
+Проверить allowlist → политики безопасности → подготовить Workspace → выполнить → записать Trace → отправить Status.
+
+Нет аварийного отката. Compensation — отдельный Step.
+
+Никаких сетевых вызовов (по умолчанию).
+
+Никаких побочных действий вне Workspace.
+
+4. RESONANCE PROTOCOL (THE ONLY CHANNEL)
+
+Version 1.1
+
+Incoming envelope
+{
+  "type": "step"|"service",
+  "session_id": "<string>",
+  "payload": {...}
+}
+
+session_init
+{
+  "type": "service",
+  "service": "session_init",
+  "session_id": "<string>",
+  "timestamp_ms": <unix_ms>,
+  "protocol_version": "1.1",
+  "plan_name": "<optional>",
+  "step_count_total": <optional int>
+}
+
+Ack
+{
+  "type": "ack",
+  "step_id": "<string>",
+  "session_id": "<string>",
+  "timestamp_received_ms": <unix_ms>
+}
+
+Result
+{
+  "type": "result",
+  "session_id": "<string>",
+  "summary": "<string>",
+  "timestamp_ms": <unix_ms>
+}
+
+Protocol errors
+
+Строго по списку:
+
+invalid_format | unknown_type | version_mismatch | session_not_found
+
+5. OBSERVATION SHELL (READ-ONLY)
+
+Version 1.1
+
+Shell must:
+
+показывать session_init
+
+показывать список шагов (id, state, command_name, timestamp)
+
+вычислять фазу по строгим правилам
+
+показывать Trace (если есть) по клику
+
+поддерживать fallback текстовый режим
+
+Shell must NOT:
+
+отправлять команды
+
+влиять на выполнение
+
+открывать новые каналы
+
+интерпретировать stdout/stderr
+
+Computed Phase Logic
+if no Status → planned
+if any Status.running → executing
+if all steps terminal and no Result → finalizing
+if Result → done
+
+6. EXECUTION LOOP (MINIMAL COMPLETE PIPELINE)
+
+Модель:
+
+User → Assistant → Resonance Protocol → Runa → TRACES → Shell
+
+Phases
+
+user submits intent
+
+assistant builds plan
+
+assistant sends session_init
+
+runa executes Steps
+
+TRACES written
+
+Shell displays
+
+assistant aggregates → Result
+
+7. ENGINEERING REQUIREMENTS (FOR IMPLEMENTATION)
+Your program must satisfy:
+
+Все структуры данных — ровно как описано, без отклонений.
+
+Все значения timestamp — unix_ms.
+
+Никаких других форм вывода, кроме Status/Result.
+
+Trace обязателен для terminal steps (если политика не определяет исключения).
+
+Workspace обязателен для всех Step.
+
+Определённая детерминированность: одинаковые Step + одинаковая среда → одинаковые Status/Trace.
+
+What you MUST NOT do:
+
+писать в лог вне TRACES
+
+выводить stdout/stderr Ассистенту
+
+менять план
+
+выполнять команды вне allowlist
+
+открывать файлы вне Workspace
+
+создавать скрытые каналы
+
+использовать нестабильные форматы данных
+
+8. OUTPUT FORMAT FOR IMPLEMENTATION
+
+Когда этот prompt используется ИИ-программистом, он должен:
+
+Строго следовать описанной архитектуре.
+
+Генерировать код, процедуры, схемы и интерфейсы, соблюдая все инварианты.
+
+Не добавлять новых сущностей, каналов или полей.
+
+Сохранять все структуры сообщений неизменными.
+
+Реализовывать поведение Runa, Protocol, Shell и tracing как описано.
+
+END OF IMPLEMENTATION PROMPT
+
+Готово для передачи любому код-ИИ или разработчику для начала фактической реализации системы GENESIS.

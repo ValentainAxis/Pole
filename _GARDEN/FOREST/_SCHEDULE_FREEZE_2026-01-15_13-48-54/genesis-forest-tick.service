@@ -1,0 +1,6 @@
+[Unit]
+Description=GENESIS Forest Tick (biomes + crossbreed + vitrina)
+
+[Service]
+Type=oneshot
+ExecStart=/home/arc/GENESIS/bin/genesis_forest_tick.sh

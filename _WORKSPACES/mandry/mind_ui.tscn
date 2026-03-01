@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckxtyy5oacu2f"]
+
+[ext_resource type="Script" path="res://mind_ui.gd" id="1_rgl86"]
+
+[node name="MindUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rgl86")
+
+[node name="Root" type="VBoxContainer" parent="."]
+layout_direction = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Состояние" type="Label" parent="Root"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Состояние"
+
+[node name="StateEdit" type="LineEdit" parent="Root"]
+layout_mode = 2
+
+[node name="Шаг" type="Label" parent="Root"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Шаг"
+
+[node name="StepEdit" type="LineEdit" parent="Root"]
+layout_mode = 2
+
+[node name="Buttons" type="HBoxContainer" parent="Root"]
+layout_mode = 2
+
+[node name="PauseBtn" type="Button" parent="Root/Buttons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Пауза"
+
+[node name="QuieterBtn" type="Button" parent="Root/Buttons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Тише
+"
+
+[node name="NoisierBtn" type="Button" parent="Root/Buttons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Шум"
+
+[node name="AskOllamaBtn" type="Button" parent="Root/Buttons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Спросить Ollama"
+
+[node name="SaveBtn" type="Button" parent="Root/Buttons"]
+layout_mode = 2
+text = "Сохранить"
+
+[node name="Log" type="TextEdit" parent="Root"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 16
+editable = false
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="PulseTimer" type="Timer" parent="."]
+wait_time = 30.0
+autostart = true
