@@ -15,3 +15,7 @@ _RAW/
 _STATE/*.tmp
 _STATE/current_session
 _TRACES/RAW_SYNC/*.tmp
+
+# --- Genesis local traces / logs (do not commit) ---
+_TRACES/
+vault_auto_push.log
