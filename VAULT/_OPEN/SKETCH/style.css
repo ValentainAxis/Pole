@@ -1,0 +1,23 @@
+body {
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 320px;
+    height: 200px;
+    border: 2px solid #999;
+}
+
+.input-field {
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 300px;
+}

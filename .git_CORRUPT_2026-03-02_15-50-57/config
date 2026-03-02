@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[lfs]
+	repositoryformatversion = 0
+[lfs "https://github.com/aimailvedi/GENESIS_VAULT.git/info/lfs"]
+	access = basic
+[alias]
+	wip = "!f(){ msg=\"${1:-wip}\"; git add -A && git commit -m \"$msg\" && git push; }; f"
+[remote "origin"]
+	url = https://github.com/aimailvedi/GENESIS_VAULT.git
+	fetch = +refs/heads/*:refs/remotes/origin/*

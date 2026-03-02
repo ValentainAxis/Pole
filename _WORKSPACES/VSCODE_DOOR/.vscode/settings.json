@@ -1,0 +1,25 @@
+{
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": true,
+  "workbench.tips.enabled": false,
+
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "editor.renderWhitespace": "selection",
+
+  // === DIFF (главный экран приёмки) ===
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // === AUTOSAVE (агент часто правит файлы) ===
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // === TERMINAL (появляется по факту) ===
+  "terminal.integrated.defaultLocation": "panel",
+  "terminal.integrated.scrollback": 5000,
+
+  // === TRUST (режим агента только в доверенной папке) ===
+  "security.workspace.trust.enabled": true,
+  "workbench.activityBar.location": "hidden"
+}

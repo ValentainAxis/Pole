@@ -1,0 +1,9 @@
+[Unit]
+Description=Run GENESIS Forest Tick weekly
+
+[Timer]
+OnCalendar=Mon *-*-* 12:31:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

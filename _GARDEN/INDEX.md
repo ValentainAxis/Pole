@@ -1,0 +1,35 @@
+# GENESIS :: GARDEN
+Здесь зреют плоды (FRUITS), складываются семечки (SEEDS) и растёт витрина (VITRINA).
+
+- 2026-W03:
+  - internal: file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W03/FRUIT_INTERNAL_2026-W03.md
+  - public:   file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W03/FRUIT_PUBLIC_2026-W03.md
+  - seed:     file:///home/arc/GENESIS/VAULT/_GARDEN/SEEDS/SEED_2026-W03.md
+- 2026-W04:
+  - internal: file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W04/FRUIT_INTERNAL_2026-W04.md
+  - public:   file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W04/FRUIT_PUBLIC_2026-W04.md
+  - seed:     file:///home/arc/GENESIS/VAULT/_GARDEN/SEEDS/SEED_2026-W04.md
+- 2026-W05:
+  - internal: file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W05/FRUIT_INTERNAL_2026-W05.md
+  - public:   file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W05/FRUIT_PUBLIC_2026-W05.md
+  - seed:     file:///home/arc/GENESIS/VAULT/_GARDEN/SEEDS/SEED_2026-W05.md
+- 2026-W06:
+  - internal: file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W06/FRUIT_INTERNAL_2026-W06.md
+  - public:   file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W06/FRUIT_PUBLIC_2026-W06.md
+  - seed:     file:///home/arc/GENESIS/VAULT/_GARDEN/SEEDS/SEED_2026-W06.md
+- 2026-W07:
+  - internal: file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W07/FRUIT_INTERNAL_2026-W07.md
+  - public:   file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W07/FRUIT_PUBLIC_2026-W07.md
+  - seed:     file:///home/arc/GENESIS/VAULT/_GARDEN/SEEDS/SEED_2026-W07.md
+- 2026-W08:
+  - internal: file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W08/FRUIT_INTERNAL_2026-W08.md
+  - public:   file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W08/FRUIT_PUBLIC_2026-W08.md
+  - seed:     file:///home/arc/GENESIS/VAULT/_GARDEN/SEEDS/SEED_2026-W08.md
+- 2026-W09:
+  - internal: file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W09/FRUIT_INTERNAL_2026-W09.md
+  - public:   file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W09/FRUIT_PUBLIC_2026-W09.md
+  - seed:     file:///home/arc/GENESIS/VAULT/_GARDEN/SEEDS/SEED_2026-W09.md
+- 2026-W10:
+  - internal: file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W10/FRUIT_INTERNAL_2026-W10.md
+  - public:   file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W10/FRUIT_PUBLIC_2026-W10.md
+  - seed:     file:///home/arc/GENESIS/VAULT/_GARDEN/SEEDS/SEED_2026-W10.md

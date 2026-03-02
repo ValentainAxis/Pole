@@ -1,0 +1,9 @@
+[Unit]
+Description=Run GENESIS Trader Card (POE) weekly
+
+[Timer]
+OnCalendar=Mon *-*-* 12:27:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

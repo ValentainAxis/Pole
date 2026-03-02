@@ -1,0 +1,6 @@
+[Unit]
+Description=GENESIS Garden Harvest (weekly fruits+seeds+vitrina)
+
+[Service]
+Type=oneshot
+ExecStart=/home/arc/GENESIS/bin/genesis_garden_harvest.sh

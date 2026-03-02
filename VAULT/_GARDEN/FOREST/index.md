@@ -1,0 +1,37 @@
+# GENESIS :: FOREST
+time: 2026-02-02 12:35:49 EET
+week: 2026-W06
+
+schema: file:///home/arc/GENESIS/VAULT/_GARDEN/FOREST/SCHEMA_GROWTH.md
+
+roots:
+- file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS
+- file:///home/arc/GENESIS/VAULT/_GARDEN/SEEDS
+- file:///home/arc/GENESIS/VAULT/_MARKET/POE
+
+## BIOME: POE (8)
+file:///home/arc/GENESIS/VAULT/_GARDEN/BIOMES/POE/index.md
+
+## BIOME: BOOK (8)
+file:///home/arc/GENESIS/VAULT/_GARDEN/BIOMES/BOOK/index.md
+
+## BIOME: FORGE (8)
+file:///home/arc/GENESIS/VAULT/_GARDEN/BIOMES/FORGE/index.md
+
+## BIOME: WORLDS (8)
+file:///home/arc/GENESIS/VAULT/_GARDEN/BIOMES/WORLDS/index.md
+
+## BIOME: HEALTH (4)
+file:///home/arc/GENESIS/VAULT/_GARDEN/BIOMES/HEALTH/index.md
+
+## BIOME: PHILOSOPHY (0
+0)
+file:///home/arc/GENESIS/VAULT/_GARDEN/BIOMES/PHILOSOPHY/index.md
+
+## BIOME: HYBRIDS (0
+0)
+file:///home/arc/GENESIS/VAULT/_GARDEN/BIOMES/HYBRIDS/index.md
+
+## CROSSBREED
+file:///home/arc/GENESIS/VAULT/_GARDEN/FOREST/CROSSBREED_2026-W06.md
+

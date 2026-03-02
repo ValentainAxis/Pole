@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GENESIS :: Control Surface</title>
+<style>
+  html,body{margin:0;padding:0;background:#0b0e14;color:#e8eefc;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;}
+  .wrap{max-width:1100px;margin:0 auto;padding:22px 18px 28px;}
+  h1{margin:0 0 10px;font-size:28px;letter-spacing:.04em}
+  .meta{opacity:.85;font-size:13px;margin-bottom:16px}
+  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+  .card{background:rgba(255,255,255,.04);border:1px solid rgba(140,170,255,.18);border-radius:16px;padding:14px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+  .card h2{margin:0 0 8px;font-size:16px}
+  .pill{display:inline-block;padding:2px 8px;border-radius:999px;background:rgba(120,150,255,.16);border:1px solid rgba(120,150,255,.18);font-size:12px;margin-left:8px}
+  .line{margin:8px 0;opacity:.9;line-height:1.35}
+  a{color:#9bb6ff;text-decoration:none;word-break:break-all}
+  a:hover{text-decoration:underline}
+  .big{grid-column:1/-1}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+       font-size:12px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.12);padding:2px 6px;border-radius:8px}
+  @media (max-width:900px){.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>GENESIS :: Control Surface <span class="pill">one door</span></h1>
+  <div class="meta">Это карта-ориентир. Она показывает, что живёт само и что делаю я. Без лишних пультов.</div>
+
+  <div class="grid">
+    <div class="card big">
+      <h2>🧭 Главная дверь</h2>
+      <div class="line">FOREST (визуальная дверь): <a href="file:///home/arc/GENESIS/VAULT/_GARDEN/FOREST/index.html">file:///home/arc/GENESIS/VAULT/_GARDEN/FOREST/index.html</a></div>
+      <div class="line">Правила поверхности управления: <a href="file:///home/arc/GENESIS/VAULT/RULES/CONTROL_SURFACE.md">file:///home/arc/GENESIS/VAULT/RULES/CONTROL_SURFACE.md</a></div>
+    </div>
+
+    <div class="card">
+      <h2>🎙️👁️ Сенсоры (как я общаюсь)</h2>
+      <div class="line">Телефон — голос и экран.</div>
+      <div class="line">ПК — кузня и резерв.</div>
+      <div class="line"><span class="pill">режим</span> текст 1:1 → (если включено) озвучка того же текста.</div>
+    </div>
+
+    <div class="card">
+      <h2>🧾 Память (две витрины)</h2>
+      <div class="line"><b>RAW</b> = сырая правда. Локально + Drive.</div>
+      <div class="line"><b>CLEAN</b> = очищенное. GitHub.</div>
+      <div class="line">По умолчанию контекст берётся из CLEAN.</div>
+    </div>
+
+    <div class="card">
+      <h2>🧷 Две “кнопки” на ПК (команды)</h2>
+      <div class="line">START: <span class="kbd">~/GENESIS/bin/genesis_session_start.sh</span></div>
+      <div class="line">CLOSE: <span class="kbd">~/GENESIS/bin/genesis_session_close.sh</span></div>
+      <div class="line">SYNC RAW → Drive: <span class="kbd">~/GENESIS/bin/genesis_raw_sync_drive.sh</span></div>
+    </div>
+
+    <div class="card big">
+      <h2>🌿 Ритм (что живёт само)</h2>
+      <div class="two">
+        <div class="card">
+          <h2>☁️ RAW → Drive</h2>
+          <div class="line">Ежедневный синк (после “ё” догоняет, когда ПК снова включён).</div>
+          <div class="line">Следы: <a href="file:///home/arc/GENESIS/VAULT/_TRACES/RAW_SYNC">file:///home/arc/GENESIS/VAULT/_TRACES/RAW_SYNC</a></div>
+        </div>
+        <div class="card">
+          <h2>🐙 CLEAN → GitHub</h2>
+          <div class="line">Автопилот GitHub пушит CLEAN и следы.</div>
+          <div class="line">Следы: <a href="file:///home/arc/GENESIS/VAULT/_TRACES">file:///home/arc/GENESIS/VAULT/_TRACES</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card big">
+      <h2>✅ Как пользоваться, когда сил мало</h2>
+      <div class="line">1) Открыть FOREST → увидеть “живёт/дышит”.</div>
+      <div class="line">2) Говорить голосом, делать дела.</div>
+      <div class="line">3) Если хочется сохранить RAW сессию: START → в конце CLOSE. Синк на Drive живёт сам (после таймера).</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# GENESIS :: VITRINA
+
+## Последние плоды
+- 2026-W06: file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W06
+- 2026-W05: file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W05
+- 2026-W04: file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W04
+- 2026-W03: file:///home/arc/GENESIS/VAULT/_GARDEN/FRUITS/2026-W03
+
+## Индекс сада
+- file:///home/arc/GENESIS/VAULT/_GARDEN/INDEX.md

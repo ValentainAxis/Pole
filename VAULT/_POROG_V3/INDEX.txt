@@ -1,0 +1,8 @@
+INDEX ПОРОГА v3.0
+------------------
+01_POROG_V3_SPEC.txt
+02_MODE_DETECTOR.txt
+03_RHYTHM_ADAPTATION.txt
+04_SELF_TUNING.txt
+05_DISTORTION_SHIELD.txt
+logs/

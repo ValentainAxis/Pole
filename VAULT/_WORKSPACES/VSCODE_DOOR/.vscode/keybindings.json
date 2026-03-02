@@ -1,0 +1,8 @@
+[
+  {
+    "key": "ctrl+shift+a",
+    "command": "workbench.action.openWalkthrough",
+    "args": "workbench.welcomePage",
+    "when": "editorTextFocus || sideBarFocus || terminalFocus"
+  }
+]

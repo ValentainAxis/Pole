@@ -1,0 +1,43 @@
+=== GENESIS :: SNAPSHOT STATE ===
+Вс 18 янв 2026 23:34:40 EET
+
+=== SYSTEM ===
+Linux Studio 5.15.0-164-generic #174-Ubuntu SMP Fri Nov 14 20:25:16 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+=== VS CODE ===
+1.107.1
+994fd12f8d3a5aa16f17d42c041e5809167e845a
+x64
+
+=== WORKSPACES ===
+итого 12
+drwxrwxr-x  3 arc arc 4096 янв 18 23:26 .
+drwxrwxr-x 28 arc arc 4096 янв 18 23:34 ..
+drwxrwxr-x  5 arc arc 4096 янв 18 23:26 VSCODE_DOOR
+
+=== VSCODE_DOOR CONTENT ===
+итого 24
+drwxrwxr-x 5 arc arc 4096 янв 18 23:26 .
+drwxrwxr-x 3 arc arc 4096 янв 18 23:26 ..
+drwxrwxr-x 2 arc arc 4096 янв 18 23:26 _NOTES
+-rw-rw-r-- 1 arc arc  905 янв 18 23:26 README_DOOR.md
+drwxrwxr-x 2 arc arc 4096 янв 18 23:26 _RUN
+drwxrwxr-x 2 arc arc 4096 янв 18 23:26 .vscode
+
+=== .vscode ===
+итого 24
+drwxrwxr-x 2 arc arc 4096 янв 18 23:26 .
+drwxrwxr-x 5 arc arc 4096 янв 18 23:26 ..
+-rw-rw-r-- 1 arc arc  118 янв 18 23:27 extensions.json
+-rw-rw-r-- 1 arc arc  190 янв 18 23:26 keybindings.json
+-rw-rw-r-- 1 arc arc  846 янв 18 23:29 settings.json
+-rw-rw-r-- 1 arc arc 1233 янв 18 23:26 tasks.json
+
+=== OLLAMA ===
+ollama version is 0.13.5
+NAME             ID              SIZE      MODIFIED    
+qwen2.5:3b       357c53fb659c    1.9 GB    4 days ago     
+llama3:latest    365c0bd3c000    4.7 GB    3 weeks ago    
+llama3.2:3b      a80c4f17acd5    2.0 GB    3 weeks ago    
+gemma3:1b        8648f39daa8f    815 MB    3 weeks ago    
+llama3.2:1b      baf6a787fdff    1.3 GB    3 weeks ago    

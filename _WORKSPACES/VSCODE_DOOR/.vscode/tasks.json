@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "📌 Doctor: System + Ollama + VS Code",
+      "type": "shell",
+      "command": "bash -lc 'set -e; echo \"=== OS ===\"; uname -a; echo; echo \"=== VS Code CLI ===\"; command -v code >/dev/null 2>&1 && code --version | head -n 1 || echo \"code: not in PATH\"; echo; echo \"=== Ollama CLI ===\"; command -v ollama >/dev/null 2>&1 && ollama --version || echo \"ollama: not in PATH\"; echo; echo \"=== Ollama API ===\"; curl -fsS http://localhost:11434/api/tags | head -n 40 || echo \"Ollama API: no response\"; echo; echo \"=== Models (ollama list) ===\"; command -v ollama >/dev/null 2>&1 && ollama list || true'",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+    },
+    {
+      "label": "🧪 Doctor: Git + Repo Health (this workspace)",
+      "type": "shell",
+      "command": "bash -lc 'set -e; echo \"=== PWD ===\"; pwd; echo; echo \"=== Git ===\"; git rev-parse --is-inside-work-tree >/dev/null 2>&1 && (git status -sb; echo; git fsck --full || true) || echo \"No git repo here\"'",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+    }
+  ]
+}

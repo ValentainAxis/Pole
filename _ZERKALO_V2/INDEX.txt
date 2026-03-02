@@ -1,0 +1,7 @@
+INDEX ЗЕРКАЛА v2.0
+-------------------
+01_ZERKALO_SPEC.txt
+02_MODES.txt
+03_INTERACTION_PROTOCOL.txt
+04_DISTORTIONS.txt
+logs/
