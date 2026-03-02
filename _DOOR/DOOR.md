@@ -1,9 +1,9 @@
 # GENESIS :: DOOR (entrypoint)
 
-time: 2026-02-28 23:21:59 EET
-week: 2026-W09
+time: 2026-03-02 06:25:46 EET
+week: 2026-W10
 host: Studio
-uptime: 0d 0h 3m
+uptime: 0d 0h 2m
 
 ## One Door
 - FOREST:  file:///home/arc/GENESIS/VAULT/_GARDEN/FOREST/index.html
@@ -18,10 +18,9 @@ uptime: 0d 0h 3m
 ## GitHub (CLEAN mirror)
 - remote: https://github.com/aimailvedi/GENESIS_VAULT.git
 - branch: sigadefa
-- head_local: n/a
+- head_local: b84f21b
 - head_remote: 741e70b
-- status: ## A  .gitattributes
-n/a
+- status: ## sigadefa
 
 ## Last traces
 - github_autopilot: 
@@ -31,8 +30,8 @@ n/a
 
 ## Timers
 ```text
-Sun 2026-03-01 09:11:36 EET 9h left        Sat 2026-02-28 17:13:43 EET 6h ago       genesis-tool-heartbeat.timer  genesis-tool-heartbeat.service
-Sun 2026-03-01 12:20:00 EET 12h left       Sat 2026-02-28 23:20:59 EET 1min 1s ago  genesis-poe-heartbeat.timer   genesis-poe-heartbeat.service
+Mon 2026-03-02 09:26:32 EET 3h 0min left  Sun 2026-03-01 20:28:11 EET 9h ago       genesis-tool-heartbeat.timer  genesis-tool-heartbeat.service
+Mon 2026-03-02 12:20:00 EET 5h 54min left Mon 2026-03-02 06:25:46 EET 726ms ago    genesis-poe-heartbeat.timer   genesis-poe-heartbeat.service
 ```
 
 ## How to restore after a month
