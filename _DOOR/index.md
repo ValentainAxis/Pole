@@ -1,5 +1,5 @@
 # GENESIS :: DOOR
-time: 2026-03-02 06:26:48 EET
+time: 2026-03-02 19:44:21 EET
 week: 2026-W10
 
 ## Signals
@@ -18,4 +18,4 @@ week: 2026-W10
 - card:  /home/arc/GENESIS/VAULT/_MARKET/POE/CARD_2026-W03.md
 - cross: /home/arc/GENESIS/VAULT/_GARDEN/FOREST/CROSSBREED_2026-W03.md
 - hybrid seed: /home/arc/GENESIS/VAULT/_GARDEN/SEEDS/HYBRIDS/SEED_HYBRID_2026-W04_POE_BOOK.md
-- fruit basket: 2026-W09
+- fruit basket: 2026-W04
